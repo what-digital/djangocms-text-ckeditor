@@ -436,7 +436,10 @@
                             CMS.CKEditor.init(
                                 document.getElementById(containerId),
                                 options,
-                                settings
+                                settings,
+                                ()=>{},
+                                null,
+                                true
                             );
                         }
                     });
