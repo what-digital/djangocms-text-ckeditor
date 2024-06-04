@@ -435,11 +435,10 @@
                         if (containerId.match(regex)) {
                             CMS.CKEditor.init(
                                 document.getElementById(containerId),
+                                'admin',
                                 options,
                                 settings,
-                                ()=>{},
-                                null,
-                                true
+                                function () {}
                             );
                         }
                     });
