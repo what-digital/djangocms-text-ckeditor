@@ -429,7 +429,7 @@
                     // in case there are multiple different inlines we need to check
                     // newly added one against all of them
                     dynamics.forEach(function (config) {
-                        var selector = config[0].id;
+                        var selector = config[0];
                         var regex = new RegExp(selector.replace('__prefix__', '\\d+'));
 
                         if (containerId.match(regex)) {
