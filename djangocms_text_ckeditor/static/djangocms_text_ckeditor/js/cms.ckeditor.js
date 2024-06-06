@@ -438,7 +438,9 @@
                                 'admin',
                                 options,
                                 settings,
-                                function () {}
+                                function (callback) {
+                                    return CMS.CKEditor.setupAdmin(callback.editor);
+                                }
                             );
                         }
                     });
